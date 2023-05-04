@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    
+    <meta charset="UTF-8">
+    
+    <title>Login</title>
+    <style>/* Style the login  */
+    body{
+      background-image: url(../images/flame.jpg);
+    }
+      
+      form {
+          
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 20px;
+          padding: 20px;
+          border: 2px solid rgb(0, 0, 0);
+          border-radius: 10px;
+          width: 300px;
+          background-color: #f0f0f0;
+          
+        }
+        
+        label {
+          font-weight: bold;
+          margin-bottom: 10px;
+          
+        }
+        
+        input[type="text"],
+        input[type="password"] {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 20px;
+          border: none;
+          border-radius: 5px;
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+        }
+        
+        input[type="submit"] {
+          background-color: #4CAF50;
+          color: white;
+          padding: 10px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+        }
+        
+        input[type="submit"]:hover {
+          background-color: #3e8e41;
+        }
+        </style>
+    <script>
+
+// Login functionality
+function login() {
+  let email = document.getElementById('login-email').value;
+  let password = document.getElementById('login-password').value;
+
+  // Check if the user email and password match with the stored data, e.g. from a database
+
+  if (match) {
+    // Redirect to the homepage
+    window.location.href = 'index.html';
+  } else {
+    alert('Invalid email or password.');
+  }
+}
+    </script>
+  </head>
+  <body>
+
+    <h1>Login</h1>
+    <style>
+      h1{
+        color: rgba(255, 255, 255, 0.629);
+      }
+    </style>
+    <form>
+      
+      <label for="username">Username:</label>
+      <input type="text" id="username" name="username"><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password"><br>
+
+      <input type="submit" value="Login">
+    </form>
+
+    
+  </body>
+</html>

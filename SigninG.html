@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <style>/* Style the login  */
+    body{
+      background-image: url(../images/flame.jpg);
+    }
+      form {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          margin: 20px;
+          padding: 20px;
+          border: 2px solid black;
+          border-radius: 10px;
+          width: 300px;
+          background-color: #f0f0f0;
+          
+        }
+        
+        label {
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+        
+        input[type="text"],
+        input[type="password"] {
+          width: 100%;
+          padding: 10px;
+          margin-bottom: 20px;
+          border: none;
+          border-radius: 5px;
+          box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.1);
+        }
+        
+        input[type="submit"] {
+          background-color: #4CAF50;
+          color: white;
+          padding: 10px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          transition: background-color 0.3s;
+        }
+        
+        input[type="submit"]:hover {
+          background-color: #3e8e41;
+        }
+        </style>
+    <script>
+        // Signup functionality
+function signup() {
+  let name = document.getElementById('signup-name').value;
+  let email = document.getElementById('signup-email').value;
+  let password = document.getElementById('signup-password').value;
+
+  // Do something with the user data, e.g. store it in a database
+
+  // Redirect to the login page
+  window.location.href = 'login.html';
+}
+
+
+    </script>
+  </head>
+  <body>
+    <hr>
+
+    <h1>Signup</h1>
+    <style>
+      h1{
+        color: aliceblue;
+      }
+    </style>
+    <form>
+      <label for="new-username">Username:</label>
+      <input type="text" id="new-username" name="new-username"><br>
+
+      <label for="new-password">Password:</label>
+      <input type="password" id="new-password" name="new-password"><br>
+
+      <input type="submit" value="Signup">
+    </form>
+
+    
+  </body>
+</html>
